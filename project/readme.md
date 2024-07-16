@@ -5,21 +5,23 @@ This project is an interactive online application that uses Streamlit to generat
 
 ## Contents
 The dataset contains the following columns:
-- **Country/Region**: The name of the country or region.
-- **Confirmed**: Total confirmed cases of COVID-19.
-- **Deaths**: Total deaths due to COVID-19.
-- **Recovered**: Total recovered cases from COVID-19.
-- **Active**: Active cases (Confirmed - Deaths - Recovered).
-- **New cases**: New confirmed cases reported.
-- **New deaths**: New deaths reported.
-- **New recovered**: New recoveries reported.
-- **Deaths / 100 Cases**: Percentage of deaths relative to the confirmed cases.
-- **Recovered / 100 Cases**: Percentage of recoveries relative to the confirmed cases.
-- **Deaths / 100 Recovered**: Percentage of deaths relative to the recoveries.
-- **Confirmed last week**: Confirmed cases one week ago.
-- **1 week change**: Change in confirmed cases compared to one week ago.
-- **1 week % increase**: Percentage increase in confirmed cases compared to one week ago.
-- **WHO Region**: World Health Organization (WHO) region to which the country/region belongs.
+- **GENDER**: Gender of the patient.
+- **AGE**: Age of the patient.
+- **SMOKING**: Smoking habits of the patient.
+- **YELLOW_FINGERS**: Presence of yellow fingers (indicative of smoking).
+- **ANXIETY**: Anxiety levels of the patient.
+- **PEER_PRESSURE**: Influence of peer pressure on the patient.
+- **CHRONIC DISEASE**: Presence of chronic diseases.
+- **FATIGUE**: Levels of fatigue experienced by the patient.
+- **ALLERGY**: Presence of allergies.
+- **WHEEZING**: Presence of wheezing.
+- **ALCOHOL CONSUMING**: Alcohol consumption habits.
+- **COUGHING**: Frequency of coughing.
+- **SHORTNESS OF BREATH**: Incidence of shortness of breath.
+- **SWALLOWING DIFFICULTY**: Difficulty in swallowing.
+- **CHEST PAIN**: Presence of chest pain.
+- **LUNG_CANCER**: Indicates whether the patient has lung cancer (positive or negative).
+- **cause**: Cause of lung cancer (if available).
 
 
 ## Steps to Run Your Streamlit App
@@ -33,6 +35,7 @@ The dataset contains the following columns:
    cd path_to_your_project_directory
    
 #### Replace path_to_your_project_directory with the actual path where your dashboard.py file is saved.
+
 #### Run Your Streamlit App: Once you're in the correct directory, run the Streamlit app by typing the following command and pressing Enter:
    streamlit run dashboard.py
    
