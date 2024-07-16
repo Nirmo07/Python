@@ -1,0 +1,101 @@
+# COVID-19 Pandemic Dataset
+
+## Overview
+This project is an interactive online application that uses Streamlit to generate a dashboard for data visualization related to lung cancer, based on Python. The dataset contains variables for age, gender, anxiety, chronic illness, smoking habits, and lung cancer symptoms. Data analysis, file management, exception handling, data cleaning, and visualization are all covered by modules on the dashboard. Lung cancer trends can be predicted and understood by users by loading data from a CSV file, displaying the dataset, and exploring important insights through a variety of plots and charts.
+
+## Contents
+The dataset contains the following columns:
+- **Country/Region**: The name of the country or region.
+- **Confirmed**: Total confirmed cases of COVID-19.
+- **Deaths**: Total deaths due to COVID-19.
+- **Recovered**: Total recovered cases from COVID-19.
+- **Active**: Active cases (Confirmed - Deaths - Recovered).
+- **New cases**: New confirmed cases reported.
+- **New deaths**: New deaths reported.
+- **New recovered**: New recoveries reported.
+- **Deaths / 100 Cases**: Percentage of deaths relative to the confirmed cases.
+- **Recovered / 100 Cases**: Percentage of recoveries relative to the confirmed cases.
+- **Deaths / 100 Recovered**: Percentage of deaths relative to the recoveries.
+- **Confirmed last week**: Confirmed cases one week ago.
+- **1 week change**: Change in confirmed cases compared to one week ago.
+- **1 week % increase**: Percentage increase in confirmed cases compared to one week ago.
+- **WHO Region**: World Health Organization (WHO) region to which the country/region belongs.
+
+
+## Steps to Run Your Streamlit App
+
+#### Install Python: Make sure Python is installed on your computer. You can download it from python.org and follow the installation instructions.
+
+#### Install Streamlit: Open a terminal or command prompt and install Streamlit using pip (Python's package installer):
+   pip install streamlit
+   
+#### Navigate to Your Project Directory: Open a terminal or command prompt and go to the folder where your dashboard.py file is located. You can change directories using the cd command:
+   cd path_to_your_project_directory
+   
+#### Replace path_to_your_project_directory with the actual path where your dashboard.py file is saved.
+#### Run Your Streamlit App: Once you're in the correct directory, run the Streamlit app by typing the following command and pressing Enter:
+   streamlit run dashboard.py
+   
+#### View Your Dashboard: Streamlit will start a local server after running the command. It will provide you with a URL (usually http://localhost:8501). Open this URL in a web browser (like Chrome, Firefox, or Edge) to see your Streamlit dashboard.
+
+#### Interact with Your Dashboard: You can interact with the dashboard directly in your web browser. Streamlit automatically updates the dashboard as you modify your dashboard.py script.
+
+#### Stopping Your App: To stop the Streamlit app, return to your terminal or command prompt where the Streamlit server is running and press Ctrl + C. This will terminate the server.
+
+## Steps to Create a COVID-19 Dashboard using Streamlit (dashboard.py)
+
+### Setup and Dependencies
+   Install necessary Python packages (streamlit, numpy, pandas, matplotlib, altair).
+   Import required libraries in your Python script.
+
+### Load and Prepare Data
+   Load your cleaned COVID-19 dataset (clean_covid_data.csv) using Pandas.
+   Optionally, perform any initial data analysis or preprocessing needed.
+
+### Define Dashboard Functions
+   Create functions to display dataset information (stream(df, analysis_results)), plot various charts (ploting(df)), and handle user interaction (user_interaction(df)).
+
+### Build the Streamlit App
+   Use Streamlit's functions (st.title(), st.write(), st.sidebar.selectbox(), etc.) to create the dashboard layout and interactive elements.
+   Designate sections for displaying dataset information, charts, and interactive components based on user selections.
+
+### Integrate Visualization
+   Embed visualizations generated from visualization.py within your Streamlit app using st.image() or st.pyplot() for Matplotlib plots.
+
+### Run and Test
+   Run your Streamlit app locally (streamlit run dashboard.py) to test functionality and ensure the dashboard displays correctly.
+
+## Steps to Create Data Visualizations using Matplotlib (visualization.py)
+
+### Setup and Dependencies
+   Install Python packages (matplotlib, pandas) for data visualization.
+   Import required libraries in your Python script.
+
+### Load Data
+   Load the cleaned COVID-19 dataset (clean_covid_data.csv) into a Pandas DataFrame.
+
+### Define Visualization Functions
+   Create functions to generate specific visualizations using Matplotlib (plot_total_cases(cleaned_data), plot_top_countries(cleaned_data)).
+   Each function should take the cleaned data as input and produce a visual output (e.g., bar charts, line charts, pie charts).
+
+### Test Visualizations
+   Test each visualization function independently to ensure they produce the expected charts and handle edge cases gracefully.
+
+### Integrate with Streamlit
+   Within your Streamlit app (dashboard.py), use st.image() or st.pyplot() to display the visualizations generated by visualization.py.
+
+### Run and Validate
+   Run visualization.py independently to ensure each function works correctly.
+   Validate integration with dashboard.py by checking that visualizations display correctly within the Streamlit app.
+
+## Example Python Code for Exception Handling
+```python
+def divide_numbers(a, b):
+    try:
+        result = a / b
+        return result
+    except ZeroDivisionError as e:
+        print(f"Error: {e}. Cannot divide by zero.")
+        
+print(divide_numbers(10, 2))   # Output: 5.0
+print(divide_numbers(5, 0))    # Output: Error: division by zero.
