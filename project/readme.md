@@ -52,6 +52,33 @@ The dataset contains the following columns:
 - Implement a function to set a custom background image for the dashboard to enhance visual appeal.
 
 
+## Steps to Create the Analysis Functionality for Lung Cancer Dashboard
+
+#### Import Libraries
+- Import necessary libraries: **Pandas**, **NumPy**, and any custom modules for file handling and data cleaning.
+
+#### Load Data
+- Specify the file path for the raw lung cancer dataset (e.g., **survey_lung_cancer.csv**).
+- Clean the data using the **clean_data** function.
+- Save the cleaned data to a new CSV file (e.g., **survey_lung_cancer_cleaned_data.csv**).
+- Load the cleaned data for analysis.
+
+#### Define Analysis Function
+- Create a function **analysis(lcd)** to perform data analysis on the cleaned dataset:
+  - Group the data by **GENDER** and **LUNG_CANCER** status to count occurrences.
+  - Extract counts of males and females diagnosed with lung cancer (i.e., **YES**).
+  - Calculate the average age of individuals diagnosed with lung cancer.
+
+#### Display Analysis Results
+- Print the results for:
+  - Number of males and females with lung cancer.
+  - Average age of individuals with lung cancer.
+- Return a dictionary containing the analysis results for further use in the dashboard.
+
+#### Main Execution
+- Use the `if __name__ == "__main__":` block to execute the analysis function when the script is run directly, passing the loaded cleaned data as an argument.
+
+
 ## Example Python Code for Exception Handling
 ```python
 def divide_numbers(a, b):
