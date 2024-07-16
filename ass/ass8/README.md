@@ -40,7 +40,7 @@ The dataset contains the following columns:
 
 #### Interact with Your Dashboard: You can interact with the dashboard directly in your web browser. Streamlit automatically updates the dashboard as you modify your dashboard.py script.
 
-### Stopping Your App: To stop the Streamlit app, return to your terminal or command prompt where the Streamlit server is running and press Ctrl + C. This will terminate the server.
+#### Stopping Your App: To stop the Streamlit app, return to your terminal or command prompt where the Streamlit server is running and press Ctrl + C. This will terminate the server.
 
 ## Steps to Create a COVID-19 Dashboard using Streamlit (dashboard.py)
 
