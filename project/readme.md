@@ -24,49 +24,33 @@ The dataset contains the following columns:
 - **cause**: Cause of lung cancer (if available).
 
 
-## Steps to Run Your Streamlit App
+## Steps to Create a Lung Cancer Analysis Dashboard using Streamlit (dashboard.py)
 
-#### Install Python: Make sure Python is installed on your computer. You can download it from python.org and follow the installation instructions.
+#### **Setup and Dependencies**
+- Install necessary Python packages such as **Streamlit**, **NumPy**, **Pandas**, **Matplotlib**, and **Altair**.
+- Import the required libraries in your Python script.
 
-#### Install Streamlit: Open a terminal or command prompt and install Streamlit using pip (Python's package installer):
-   pip install streamlit
-   
-#### Navigate to Your Project Directory: Open a terminal or command prompt and go to the folder where your dashboard.py file is located. You can change directories using the cd command:
-   cd path_to_your_project_directory
-   
-#### Replace path_to_your_project_directory with the actual path where your dashboard.py file is saved.
+#### **Load and Prepare Data**
+- Load the cleaned lung cancer dataset (e.g., **survey_lung_cancer_cleaned_data.csv**) using **Pandas**.
+- Optionally, perform initial data analysis or preprocessing as needed.
 
-#### Run Your Streamlit App: Once you're in the correct directory, run the Streamlit app by typing the following command and pressing Enter:
-   streamlit run dashboard.py
-   
-#### View Your Dashboard: Streamlit will start a local server after running the command. It will provide you with a URL (usually http://localhost:8501). Open this URL in a web browser (like Chrome, Firefox, or Edge) to see your Streamlit dashboard.
+#### **Define Dashboard Functions**
+- Create a function to display dataset information and analysis results.
+- Develop a function to generate various visualizations based on user input.
 
-#### Interact with Your Dashboard: You can interact with the dashboard directly in your web browser. Streamlit automatically updates the dashboard as you modify your dashboard.py script.
+#### Build the Streamlit App
+- Use Streamlit functions (e.g., **st.title()**, **st.write()**, **st.sidebar.selectbox()**) to create the layout and interactive elements of the dashboard.
+- Designate sections for displaying dataset information, charts, and interactive components based on user selections.
 
-#### Stopping Your App: To stop the Streamlit app, return to your terminal or command prompt where the Streamlit server is running and press Ctrl + C. This will terminate the server.
+#### Integrate Visualization
+- Embed visualizations using **Matplotlib** and **Altair** within your Streamlit app for a dynamic and interactive visual representation of the data.
 
-## Steps to Create a COVID-19 Dashboard using Streamlit (dashboard.py)
+#### Run and Test
+- Run the Streamlit app locally with the command **streamlit run dashboard.py** to test functionality and ensure the dashboard displays correctly.
 
-### Setup and Dependencies
-   Install necessary Python packages (streamlit, numpy, pandas, matplotlib, altair).
-   Import required libraries in your Python script.
+#### Set Background Image (Optional)
+- Implement a function to set a custom background image for the dashboard to enhance visual appeal.
 
-### Load and Prepare Data
-   Load your cleaned COVID-19 dataset (clean_covid_data.csv) using Pandas.
-   Optionally, perform any initial data analysis or preprocessing needed.
-
-### Define Dashboard Functions
-   Create functions to display dataset information (stream(df, analysis_results)), plot various charts (ploting(df)), and handle user interaction (user_interaction(df)).
-
-### Build the Streamlit App
-   Use Streamlit's functions (st.title(), st.write(), st.sidebar.selectbox(), etc.) to create the dashboard layout and interactive elements.
-   Designate sections for displaying dataset information, charts, and interactive components based on user selections.
-
-### Integrate Visualization
-   Embed visualizations generated from visualization.py within your Streamlit app using st.image() or st.pyplot() for Matplotlib plots.
-
-### Run and Test
-   Run your Streamlit app locally (streamlit run dashboard.py) to test functionality and ensure the dashboard displays correctly.
 
 ## Steps to Create Data Visualizations using Matplotlib (visualization.py)
 
