@@ -24,17 +24,23 @@ The dataset contains the following columns:
 
 ## Steps to Run Your Streamlit App
 
-### Install Python: Make sure Python is installed on your computer. You can download it from python.org and follow the installation instructions.
-### Install Streamlit: Open a terminal or command prompt and install Streamlit using pip (Python's package installer):
+#### Install Python: Make sure Python is installed on your computer. You can download it from python.org and follow the installation instructions.
+
+#### Install Streamlit: Open a terminal or command prompt and install Streamlit using pip (Python's package installer):
    pip install streamlit
-### Navigate to Your Project Directory: Open a terminal or command prompt and go to the folder where your dashboard.py file is located. You can change directories using the cd command:
+   
+#### Navigate to Your Project Directory: Open a terminal or command prompt and go to the folder where your dashboard.py file is located. You can change directories using the cd command:
    cd path_to_your_project_directory
-### Replace path_to_your_project_directory with the actual path where your dashboard.py file is saved.
-### Run Your Streamlit App: Once you're in the correct directory, run the Streamlit app by typing the following command and pressing Enter:
+   
+#### Replace path_to_your_project_directory with the actual path where your dashboard.py file is saved.
+#### Run Your Streamlit App: Once you're in the correct directory, run the Streamlit app by typing the following command and pressing Enter:
    streamlit run dashboard.py
-### View Your Dashboard: After running the command, Streamlit will start a local server. It will provide you with a URL (usually http://localhost:8501). Open this URL in a web browser (like Chrome, Firefox, or Edge) to see your Streamlit dashboard.
-### Interact with Your Dashboard: You can interact with the dashboard directly in your web browser. Streamlit automatically updates the dashboard as you modify your dashboard.py script.
-### Stopping Your App: To stop the Streamlit app, go back to your terminal or command prompt where the Streamlit server is running and press Ctrl + C. This will terminate the server.
+   
+#### View Your Dashboard: Streamlit will start a local server after running the command. It will provide you with a URL (usually http://localhost:8501). Open this URL in a web browser (like Chrome, Firefox, or Edge) to see your Streamlit dashboard.
+
+#### Interact with Your Dashboard: You can interact with the dashboard directly in your web browser. Streamlit automatically updates the dashboard as you modify your dashboard.py script.
+
+### Stopping Your App: To stop the Streamlit app, return to your terminal or command prompt where the Streamlit server is running and press Ctrl + C. This will terminate the server.
 
 ## Steps to Create a COVID-19 Dashboard using Streamlit (dashboard.py)
 
