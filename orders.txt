@@ -1,0 +1,4 @@
+Cookies,4
+Salad,2
+Tea,2
+Fries,3

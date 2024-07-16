@@ -1,0 +1,11 @@
+Mango Lassi, 90,90
+Tea, 10, 100
+Coffee, 15,80
+Sandwich, 50,60
+Samosa, 20,50
+Burger, 80,40
+Fries, 30,70
+Pizza Slice,60,30
+Juice, 25,90
+Salad, 40,50
+Cookies, 15,120
