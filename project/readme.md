@@ -1,4 +1,4 @@
-# COVID-19 Pandemic Dataset
+# LUNG CANCER ANALYSIS Dataset
 
 ## Overview
 This project is an interactive online application that uses Streamlit to generate a dashboard for data visualization related to lung cancer, based on Python. The dataset contains variables for age, gender, anxiety, chronic illness, smoking habits, and lung cancer symptoms. Data analysis, file management, exception handling, data cleaning, and visualization are all covered by modules on the dashboard. Lung cancer trends can be predicted and understood by users by loading data from a CSV file, displaying the dataset, and exploring important insights through a variety of plots and charts.
